@@ -5,7 +5,7 @@ export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
     baseUrl:
-      "https://rockies-server-beta-qgy039own-abdulrahmanalaa7s-projects.vercel.app/api/v1/",
+      "https://rockies-server-beta-kkyrtuwj7-abdulrahmanalaa7s-projects.vercel.app/api/v1",
   }),
   endpoints: (builder) => ({
     refreshToken: builder.query({
