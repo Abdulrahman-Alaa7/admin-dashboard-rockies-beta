@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import Heading from "../../../../utils/Heading";
 import ViewOrder from "../../../../components/task-table/components/ViewOrder";
-import AdminProtected from "../../../../hooks/AdminProtected";
 import {
   ScrollArea,
   ScrollBar,
@@ -21,7 +20,7 @@ const Page: FC<Props> = ({ params }: any) => {
   ];
 
   return (
-    <AdminProtected>
+    <>
       <ScrollArea className="h-full">
         <div>
           <Heading
@@ -44,7 +43,7 @@ const Page: FC<Props> = ({ params }: any) => {
         </div>
         <ScrollBar orientation="horizontal" />
       </ScrollArea>
-    </AdminProtected>
+    </>
   );
 };
 

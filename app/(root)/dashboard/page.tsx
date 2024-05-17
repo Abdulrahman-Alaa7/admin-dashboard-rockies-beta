@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import AdminProtected from "../../hooks/AdminProtected";
 import Heading from "../../utils/Heading";
 import { ScrollArea } from "../../../components/ui/scroll-area";
 import { Button } from "../../../components/ui/button";
@@ -26,7 +25,7 @@ type Props = {};
 
 const Page: FC<Props> = ({}) => {
   return (
-    <AdminProtected>
+    <>
       <Heading
         title="Rockies's Dashboard"
         description="Rockies is a special food truck."
@@ -89,7 +88,7 @@ const Page: FC<Props> = ({}) => {
           </Tabs>
         </div>{" "}
       </ScrollArea>
-    </AdminProtected>
+    </>
   );
 };
 

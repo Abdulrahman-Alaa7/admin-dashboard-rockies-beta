@@ -14,12 +14,12 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <AdminProtected>
+    <>
       <Header />
       <div className="flex h-screen overflow-hidden">
         <Sidebar />
         <main className="w-full pt-16">{children}</main>
       </div>
-    </AdminProtected>
+    </>
   );
 }

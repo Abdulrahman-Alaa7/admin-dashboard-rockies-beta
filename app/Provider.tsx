@@ -9,15 +9,15 @@ interface ProviderProps {
 }
 
 export function Providers({ children }: ProviderProps) {
-  useEffect(() => {
-    const initializeApp = async () => {
-      await store.dispatch(
-        apiSlice.endpoints.loadUser.initiate({}, { forceRefetch: true })
-      );
-    };
+  // useEffect(() => {
+  //   const initializeApp = async () => {
+  //     await store.dispatch(
+  //       apiSlice.endpoints.loadUser.initiate({}, { forceRefetch: true })
+  //     );
+  //   };
 
-    initializeApp();
-  }, []);
+  //   initializeApp();
+  // }, []);
 
   return <Provider store={store}>{children}</Provider>;
 }

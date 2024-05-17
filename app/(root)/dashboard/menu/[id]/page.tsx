@@ -1,11 +1,10 @@
 import React, { FC } from "react";
-import AdminProtected from "../../../../hooks/AdminProtected";
 import Heading from "../../../../utils/Heading";
 import BreadCrumb from "../../../../components/Breadcrumb";
 import { HeadPage } from "../../../../../components/ui/HeadPage";
 import { Separator } from "../../../../../components/ui/separator";
 import { ScrollArea } from "../../../../../components/ui/scroll-area";
-import MenuItem from "@/app/components/Menu/MenuItem";
+import MenuItem from "../../../../components/Menu/MenuItem";
 
 type Props = {};
 
@@ -28,7 +27,8 @@ const Page: FC<Props> = ({ params }: any) => {
   };
 
   return (
-    <AdminProtected>
+    <>
+      {" "}
       <Heading
         title="Update Menu"
         description="Rockies is a special food truck."
@@ -47,7 +47,7 @@ const Page: FC<Props> = ({ params }: any) => {
           <MenuItem initialData={defaultValues} />
         </div>
       </ScrollArea>
-    </AdminProtected>
+    </>
   );
 };
 

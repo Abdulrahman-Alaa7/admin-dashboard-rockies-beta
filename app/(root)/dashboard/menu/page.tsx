@@ -1,5 +1,4 @@
 import React from "react";
-import AdminProtected from "../../../hooks/AdminProtected";
 import Heading from "../../../utils/Heading";
 import BreadCrumb from "../../../components/Breadcrumb";
 import { HeadPage } from "../../../../components/ui/HeadPage";
@@ -188,7 +187,7 @@ const Page = (props: Props) => {
   };
 
   return (
-    <AdminProtected>
+    <>
       <Heading
         title="Rockies's Menu"
         description="Rockies is a special food truck."
@@ -210,7 +209,7 @@ const Page = (props: Props) => {
           <MenuComponent menu={menuData} />
         </div>
       </ScrollArea>
-    </AdminProtected>
+    </>
   );
 };
 

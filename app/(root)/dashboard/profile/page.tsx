@@ -1,5 +1,4 @@
 import React from "react";
-import AdminProtected from "../../../hooks/AdminProtected";
 import Heading from "../../../utils/Heading";
 import BreadCrumb from "../../../components/Breadcrumb";
 import { HeadPage } from "../../../../components/ui/HeadPage";
@@ -15,7 +14,7 @@ const breadcrumbItems = [{ title: "Profile", link: "/dashboard/profile" }];
 
 const Page = (props: Props) => {
   return (
-    <AdminProtected>
+    <>
       <Heading
         title="Rockies's Profile"
         description="Rockies is a special food truck."
@@ -31,7 +30,7 @@ const Page = (props: Props) => {
           <EditProfile />
         </div>
       </ScrollArea>
-    </AdminProtected>
+    </>
   );
 };
 

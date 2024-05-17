@@ -1,9 +1,7 @@
 import React from "react";
-import AdminProtected from "../../../hooks/AdminProtected";
 import Heading from "../../../utils/Heading";
 import BreadCrumb from "../../../components/Breadcrumb";
 import { HeadPage } from "../../../../components/ui/HeadPage";
-
 import { Separator } from "../../../../components/ui/separator";
 import { ScrollArea } from "../../../../components/ui/scroll-area";
 import CategoryItem from "../../../components/CategoryItem";
@@ -27,7 +25,7 @@ const Page = (props: Props) => {
   };
 
   return (
-    <AdminProtected>
+    <div>
       <Heading
         title="Rockies's Categories"
         description="Rockies is a special food truck."
@@ -46,7 +44,7 @@ const Page = (props: Props) => {
           <CategoryItem categories={categories} />
         </div>
       </ScrollArea>
-    </AdminProtected>
+    </div>
   );
 };
 

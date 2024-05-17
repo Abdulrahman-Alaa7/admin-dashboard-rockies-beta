@@ -1,5 +1,4 @@
 import React from "react";
-import AdminProtected from "../../../hooks/AdminProtected";
 import Heading from "../../../utils/Heading";
 import BreadCrumb from "../../../components/Breadcrumb";
 import { DataTable } from "../../../components/task-table/components/data-table";
@@ -16,7 +15,7 @@ const breadcrumbItems = [{ title: "Orders", link: "/dashboard/orders" }];
 
 const Page = (props: Props) => {
   return (
-    <AdminProtected>
+    <>
       <Heading
         title="Recent Orders"
         description="Rockies is a special food truck."
@@ -38,7 +37,7 @@ const Page = (props: Props) => {
 
         <DataTable data={orders} columns={columns} />
       </div>
-    </AdminProtected>
+    </>
   );
 };
 
